@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="stely.css" />
+    <link rel="stylesheet" href="./style/stely.css" />
   </head>
   <body>
-    <header></header>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+          <a class="cabecalho__menu__link" href="index.html">Home</a>
+          <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        </nav>
+    </header>
     <main class="apresentacao">
       <section class="apresentacao__conteudo">
         <h1 class="apresentacao__conteudo__titulo">
@@ -23,21 +28,37 @@
           prática boas ideias. Vamos conversar?
         </p>
         <div class="apresentacao__links">
-          <h2>Acesse minhas redes:</h2>
+          <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
+
           <a
+            class="apresentacao__links__link"
+            href="https://github.com/rafaballerini"
+          >
+            <img src="./assets/github.png" />
+
+            GitHub
+            <a
             class="apresentacao__links__link"
             href="https://instagram.com/rafaballerini"
-            >Instagram</a
           >
-          <a
+            <img src="./assets/instagram.png" />
+
+            Instagram   
+            <a
             class="apresentacao__links__link"
-            href="https://github.com/guilhermeonrails"
-            >GitHub</a
+            href="https://twitter.com/rafaballerini"
           >
+            <img src="./assets/twitter.png" />
+
+            Twitter
+          </a>
         </div>
       </section>
-      <img src="Imagem.n.png" alt="imagem joana" />
+      <img src="./assets/Imagem.n.png" alt="imagem joana" />
     </main>
-    <footer></footer>
+    <footer class="rodape">  
+      <p>Desenvolvido por Alura.</p>
+
+    </footer>
   </body>
 </html>
