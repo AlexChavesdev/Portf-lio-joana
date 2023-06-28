@@ -33,7 +33,7 @@ body{
 
 .cabecalho__menu__link{
     font-family:'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color:#22d4fd;
     text-decoration: none;
@@ -47,6 +47,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:82px;
 }
 
 .titulo-destaque{
@@ -54,19 +55,21 @@ body{
 }
 
 .apresentacao__conteudo{
-    width:615px;
+    /*width:615px;*/
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px; 
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    /*font-size: 36px;*/ 
+    font-size: 2,25rem; /*será usado o "rem" para tamanho de fonte, pois ele é adaptado para todo variação web (https://www.w3schools.com/cssref/css_units.php) doc. O CALCULO É 16PX PARA CA REM*/
     font-family: 'Krona One', sans-serif; 
 }
 
 .apresentacao__conteudo__texto{
-    font-size:24px;
+    font-size:1.5rem;
     font-family: 'Montserrat', sans-serif;
 }
 .apresentacao__links{
@@ -80,7 +83,7 @@ body{
 .apresentacao__links__subtitulo{
     font-family: 'Krona One', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 
 }
 
@@ -92,10 +95,10 @@ body{
     justify-content: center; /* para centralizar os itens*/
     gap: 16px; /*para separar os itens*/
     border: 2px solid #22d4fd; /* para colocar borda (solid É o formato dos traços, no BODER STYLE TEM OUTRAS FORMA DOS TRAÇOS) */
-    width: 378px; /* para o tamanho das letras*/
+    width: 50%; /* para o tamanho das letras*/
     text-align: center;
     border-radius: 8px; /*para arredondar as bordas*/
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight:600;
     padding: 21.5px 0;
     text-decoration:none;
@@ -109,12 +112,41 @@ body{
     background-color: #272727;
 
 }
+.apresentacao__imagem{
+    width: 50%;
+}
 .rodape{
     padding:24px ;
     color:#000000;
     background-color: #22d4fd;
     text-align: center; /*alinhar texto */
-    font-size: 24px ;
+    font-size: 1.5rem ;
     font-family: 'Montserrat', sans-serif;.
-    font-weight: 400;
+    font-weight: 400; 
+}
+
+/* usado para mudar o formato da tela quando for menor qur certo px, ex: em celular*/
+@media (max-width: 1200px) {
+    
+    .cabecalho{
+        padding: 10%;
+
+    }
+
+    .cabecalho__menu{
+
+        justify-content:center;
+
+    }
+    
+    .apresentacao{
+        flex-direction:column-reverse ;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+
 }
